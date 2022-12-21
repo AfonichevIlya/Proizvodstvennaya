@@ -1,15 +1,19 @@
 .container {
   max-width: 576px;
   padding-top: 5px;
-  border-radius: 20px;
   margin-top: 20px;
+}
+.container:hover {
+  -webkit-box-shadow: 0px 2px 4px 5px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 2px 4px 5px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 2px 4px 5px rgba(34, 60, 80, 0.2);
 }
 .button:hover {
   background-color: rgb(0, 255, 98);
   border-radius: 10px;
 }
 .button {
-  background-color: rgb(177, 255, 199);
+  background-color: rgb(194, 255, 211);
   border-radius: 10px;
 }
 .form-floating > .form-control,
@@ -75,7 +79,7 @@
 }
 
 .dropdown-item:hover {
-  background-color: rgb(0, 150, 75);
+  background-color: rgb(60, 116, 88);
   transition: all 0.5s;
 }
 
@@ -118,7 +122,7 @@ a:visited {
   text-decoration: none;
 }
 .button {
-  background: #336454;
+  background-image: linear-gradient(45deg, #6ba8da, #8c6ff5);
   color: #fff;
   border: none;
   position: relative;
@@ -136,8 +140,9 @@ a:visited {
   text-align: center;
 }
 .button:hover {
-  background: rgba(139, 255, 207, 0.514);
+  background-image: linear-gradient(45deg, #8c6ff5, #6ba8da);
   color: #000000;
+  border-radius: 0%;
 }
 .button:before,
 .button:after {
@@ -161,7 +166,6 @@ a:visited {
   width: 100%;
   transition: 800ms ease all;
 }
-
 .navbar-brand:hover {
   color: #ffffff;
 }
