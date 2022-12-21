@@ -22,7 +22,10 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a href="" class="navbar-brand"
+        <div class="container col-1">
+        <div class="badge bg-success" id="bbb">info</div>
+</div>
+        <a href="./index.html" class="navbar-brand"
           ><img class="navbar-image" src="./images/logo1.png" alt=""
         /></a>
         <a class="navbar-brand" href="#">Гарант-логистика</a>
@@ -40,7 +43,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./main.html"
+              <a class="nav-link active" aria-current="page" href="./index.html"
                 >Главная</a
               >
             </li>
@@ -224,6 +227,14 @@
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
-   
+<script defer>
+  function schetchik() {
+    let d = new Date();
+    let ddd = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+    document.getElementById("bbb").innerHTML = ddd;
+  }
+  setInterval(schetchik,1000)
+  schetchik()
+</script>
   </body>
 </html>
